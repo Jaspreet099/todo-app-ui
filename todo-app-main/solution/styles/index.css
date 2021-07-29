@@ -1,0 +1,80 @@
+@import url("./globals/index.css");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-dark-blue);
+  font-family: var(--font-js);
+}
+
+div.image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+div.application {
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  width: 480px;
+  margin-top: -12em;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 2em;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+}
+
+div.application > div.app-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.application > div.app-header > h1 {
+  color: white;
+  letter-spacing: 10px;
+}
+
+div.application > div.app-header > span.theme-icon-wrapper {
+  margin-left: auto;
+}
+
+div.application > div.form-wrapper > div.todo-input-wrapper {
+  width: 100%;
+}
+
+div.application > div.form-wrapper > div.todo-input-wrapper > input.todo-input-box {
+  width: 100%;
+  padding: 1.2em;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--color-dark-desaturated-blue);
+  font-family: inherit;
+}
+
+div.application > div.form-wrapper > div.todo-input-wrapper > input.todo-input-box:focus {
+  outline: none !important;
+}
+/*# sourceMappingURL=index.css.map */
